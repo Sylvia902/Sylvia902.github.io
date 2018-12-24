@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .section {
+            padding-top: 80px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .nav {
+            box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
+            background-color: #0D131A;
+            z-index: 99;
+        }
+
+        .nav_1 {
+            text-align: center;
+            height: 60px;
+            line-height: 60px;
+            font-weight: 800;
+        }
+
+        .nav_1 span {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40pt;
+            color: rgb(230, 192, 142);
+            font-weight: 600;
+            text-shadow: 2px 2px 2px #3f3f3f;
+        }
+
+        .backgdimg {
+            width: 100%;
+            height: 100vh;
+            background-image: url(img/backgroundimage02.jpg);
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            position: relative;
+            z-index: 98;
+        }
+
+        .gdinfor {
+            line-height: 24px;
+            font-size: 16px;
+            text-align: right;
+            top: 50%;
+            right: 5%;
+            position: absolute;
+            font-family: Arial, Helvetica;
+            font-style: italic;
+            color: white;
+            letter-spacing: 3px;
+        }
+
+        .backgdinfor {
+            text-align: right;
+            bottom: 12%;
+            right: 5%;
+            position: absolute;
+            font-family: Arial, Helvetica, '微軟正黑體';
+            font-style: italic;
+            font-size: 50px;
+            color: white;
+            font-weight: 800;
+            letter-spacing: 3px;
+            transition: 1.5s;
+        }
+
+        .backgdinfor:hover {
+            color: rgba(255, 255, 255, 0.4);
+            transform: scale(2) translate(-50%);
+            transition: 0.8s;
+
+
+        }
+
+        .nav_2 {
+            height: 80px;
+            position: sticky;
+            top: 0;
+
+        }
+
+        .nav_2 a {
+            float: left;
+            font-size: 20px;
+            color:  rgb(230, 192, 142);
+            text-decoration: none;
+            font-family: '微軟正黑體';
+            line-height: 80px;
+            padding: 0 20px;
+            transition: 1s;
+        }
+
+        .nav_2 a:hover {
+            font-weight: 600;
+            color: #0D131A;
+            background-color: rgb(230, 192, 142);
+            transition: 0.5s;
+        }
+
+        #section_1 {
+            position: relative;
+        }
+
+        #section_1 .back {
+            width: 1560px;
+            height: 550px;
+            background-image: url(img/movie03.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            position: absolute;
+            right: 0;
+            top: 26%;
+            opacity: 0.9;
+        }
+
+        #section_1 #cont {
+            position: relative;
+        }
+
+        #section_1 .story {
+            padding: 0 150px;
+            text-align: center;
+            padding-top: 12%;
+
+        }
+
+        #section_1 .story span {
+            color: rgb(245, 240, 240);
+            letter-spacing: 2px;
+            line-height: 35px;
+            font-size: 16px;
+            font-family: '微軟正黑體';
+        }
+
+        #section_1 .title {
+            writing-mode: vertical-lr;
+            line-height: 100px;
+            text-align: center;
+            width: 100px;
+            height: 400px;
+            color: rgb(255, 255, 255);
+            font-size: 50px;
+            font-family: '微軟正黑體';
+            text-align: center;
+            border: 8px solid white;
+            position: absolute;
+            letter-spacing: 10px;
+            right: 18%;
+            top: 12%;
+        }
+
+        #section_1 .backbtn {
+            font-family: '微軟正黑體';
+            font-size: 20px;
+            font-weight: bold;
+            color: #263228;
+            background-color: bisque;
+            line-height: 60px;
+            text-align: center;
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            right: 8%;
+            bottom: 10%;
+            position: fixed;
+            z-index: 97;
+        }
+
+        .img_movie {
+            float: left;
+            width: 50%;
+            height: calc(100vh - 80px);
+            position: relative;
+        }
+
+        .img_movie:hover {
+            transition: 1s;
+        }
+
+
+        #section_2 .still_infor {
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            color: transparent;
+            font-size: 30pt;
+            transition: 0.3s;
+        }
+
+        #section_2 .still_infor:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+            color: rgb(43, 25, 21);
+            transition: 0.8s;
+        }
+
+        #section_2 .still_infor span {
+            font-family: '微軟正黑體';
+            font-weight: 800;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+
+        #img_still_1 {
+            background-image: url(img/movie10.jpg);
+            background-size: cover;
+            background-position: 39%;
+            background-color: aqua;
+        }
+
+        #img_still_2 {
+            background-image: url(img/movie12.jpg);
+            background-size: cover;
+            background-position: 90%;
+            background-color: aquamarine;
+        }
+
+        #section_3 .bgimg {
+            background-image: url(img/movie09.jpg);
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            height: 50vh;
+            background-attachment: fixed;
+
+        }
+
+        #section_3 .mask {
+            width: 100%;
+            height: 50vh;
+            background-color: rgba(0, 0, 0, 0.65);
+            float: left;
+
+        }
+
+        #section_3 img {
+            width: 100%;
+            height: 100%;
+            transition: 1s;
+        }
+
+        #section_3 .img_cover {
+            width: 500px;
+            height: 700px;
+            position: absolute;
+            top: -100%;
+            overflow: hidden;
+            box-shadow: 4px 4px 20px 0 rgba(0, 0, 0, 0.4);
+        }
+
+        #section_3 .img_cover:hover img {
+            transform: scale(1.2);
+            transition: 0.8s;
+        }
+
+        #section_3 .container {
+            position: relative;
+            height: 100%;
+        }
+
+        #section_3 .title {
+            color: white;
+            font-size: 50px;
+            font-family: '微軟正黑體';
+            text-align: center;
+            border: 8px solid white;
+            letter-spacing: 10px;
+            width: 400px;
+            height: 100px;
+            line-height: 100px;
+            position: absolute;
+            top: -80%;
+            left: 50%;
+        }
+
+        #section_3 .infor {
+            padding: 3% 0 10% 50%;
+        }
+
+        #section_3 .infor span {
+            font-family: '微軟正黑體';
+            font-size: 14pt;
+            letter-spacing: 3px;
+        }
+
+        /* #section_3 .cha {
+            padding-left: 35%;
+            padding-bottom: 25%;
+        }
+
+        #section_3 .img_cha {
+            height: 300px;
+            width: 200px;
+            float: left;
+            background-size: cover;
+            background-position: center;
+            margin-right: 5%;
+        }
+
+        #section_3 #img_dad {
+            background-image: url(img/img_cha1.gif);
+        }
+
+        #section_3 #img_mom {
+            background-image: url(img/img_cha2.jpg);
+        }
+
+        #section_3 #img_kid {
+            background-image: url(img/img_cha3.jpg);
+        } */
+        
+
+        #section_4 .award {
+            padding: 10% 0;
+        }
+
+        #section_4 .img_award {
+            height: 488px;
+            width: 30%;
+            float: left;
+            background-size: cover;
+            background-position: center;
+        }
+
+        #section_4 #img_oscar {
+            background-image: url(img/oscar.jpg);
+
+        }
+
+        #section_4 #img_cannes {
+            background-image: url(img/cannes.jpg);
+            margin-left: 5%;
+        }
+
+        #section_4 #img_european {
+            background-image: url(img/european.jpg);
+            float: right;
+        }
+
+        #section_4 .img_award {
+            position: relative;
+        }
+
+        #section_4 .infor_award {
+            width: 100%;
+            height: 100%;
+            color: transparent;
+
+        }
+
+        #section_4 .infor_award:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+            color: black;
+            transition: 0.5s;
+            transform: scaley(0.9);
+        }
+
+        #section_4 .infor_award span {
+            font-weight: 800;
+            font-family: '微軟正黑體';
+            font-size: 18pt;
+            position: absolute;
+            bottom: 0;
+        }
+
+
+        .clearfix {
+            clear: both;
+        }
+
+        #section_4 {
+            position: relative;
+        }
+
+        #section_4 .back_word {
+            color: rgb(219, 219, 219);
+            font-size: 150pt;
+            font-style: italic;
+            text-align: center;
+            display: block;
+            padding-top: 10%;
+        }
+
+        #footer {
+            height: 400px;
+            background-image: url(img/naturalblack.png);
+            background-size: contain;
+            position: relative;
+
+        }
+
+        #center {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 300%);
+        }
+
+        #footer a {
+            color: #E6C08E;
+            font-size: 14pt;
+            float: left;
+            text-decoration: none;
+            font-family: '微軟正黑體';
+            margin: 0 30px;
+        }
+
+        #copyright {
+            color: #E6C08E;
+            font-size: 14pt;
+            font-family: '微軟正黑體';
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translate(-50%);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav nav_1" id="top">
+        <div class="container">
+            <span>la vita è bella</span>
+        </div>
+    </nav>
+    <div class="backgdimg">
+        <div class="gdinfor">
+            <span>
+                An unforgettable fable<br> that proves love,
+                family and<br> imagination conquer all.
+            </span>
+        </div>
+        <div class="backgdinfor">
+            <span>
+                美麗人生<br>
+                Life is beautiful
+            </span>
+        </div>
+    </div>
+    <nav class="nav nav_2">
+        <div class="container">
+            <a href="#section_1">
+                <div class="block"><span>劇情簡介</span></div>
+            </a>
+            <a href="#section_2">
+                <div class="block"><span>電影劇照</span></div>
+            </a>
+            <a href="#section_3">
+                <div class="block"><span>電影資訊</span></div>
+            </a>
+            <a href="#section_4">
+                <div class="block"><span>獲得獎項</span></div>
+            </a>
+        </div>
+    </nav>
+    <div id="sections">
+        <div class="section" id="section_1">
+            <div class="back">
+                <div class="title"><span>劇情簡介</span></div>
+            </div>
+            <div class="container" id="cont">
+                <div class="story">
+                    <span>
+                        電影內容敘述二次大戰時期，德國將猶太人送往集中營，對猶太人管制、虐待、屠殺的故事。故事並沒有以血腥的畫面呈現德國納粹的殘暴，
+                        而是以喜劇的方式讓觀眾領悟生命的真諦。<br><br>
+
+                        一名義大利猶太裔青年基多（Guido），來到了義大利的Arezzo。基多是一名幽默風趣而吸引人的青年，他愛上了一名教師朵拉（Dora），
+                        而朵拉則是已經有了婚約，不過基多仍是在朵拉的生活中添加許多驚奇，朵拉也漸漸愛上基多，基多更是在朵拉的訂婚宴上搶婚。兩人多年之後有了第一個兒子－約書亞（Joshua），
+                        基多也開了他夢寐以求的書店，只是基多夢寐以求的日子沒有持續太久，一切夢想在一家人送往納粹集中營後幻滅。<br><br>
+
+                        天性幽默的基多不願毀了兒子的天真無邪，由於兩人都有猶太人的血統，兩人被送往了集中營，朵拉則要求一同前往而被送到女子集中營。
+                        基多故意編故事遊戲來騙約書亞，只要誰先能得到1000分就能得到一部真的坦克，使得約書亞不但適應集中營的生活，更逃過了被送去毒氣室毒死的命運。
+                        基多也要讓朵拉知道兩人還活著，讓朵拉能夠有活下去的希望。在德軍投降的前一晚，基多為了不讓兒子受害，再度編遊戲讓兒子躲到箱子當中，等待美軍的到來，
+                        但是基多在尋找朵拉時卻被德軍發現了，基多最後則是死在納粹守衛的亂槍之下。翌日，美軍抵達，約書亞按照與爸爸的約定從箱子中出來，他見到了美軍的M4雪曼坦克，認為自己贏得了遊戲，
+                        最後約書亞也與母親重逢。<br><br>
+                    </span>
+                </div>
+            </div>
+
+            <a href="#top">
+                <div class="backbtn"><span>Top</span></div>
+            </a>
+            <div class="clearfix"></div>
+        </div>
+        <div class="section" id="section_2">
+            <div id="img_still_1" class="img_movie">
+                <div class="still_infor">
+                    <span>意志力戰勝一切</span>
+                </div>
+            </div>
+            <div id="img_still_2" class="img_movie">
+                <div class="still_infor">
+                    <span>殘忍現實裡屬於自己的美麗人生</span>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="section" id="section_3">
+            <div class="bgimg">
+                <div class="mask"></div>
+            </div>
+
+            <div class="container">
+                <div class="img_cover">
+                    <img src="img/cover.jpg" alt="">
+                </div>
+                <div class="title"><span>電影資訊</span></div>
+                <div class="infor">
+                    <span>
+                        <b>美麗人生</b><br>
+                        La Vita e bella<br>
+                        <b>上映日期</b> 1997-12-20<br>
+                        <b>導演</b> 羅貝托·貝尼尼<br>
+                        <b>編劇</b> 文森佐·克拉米、羅貝托·貝尼尼<br>
+                        <b>主演</b> 羅貝托·貝尼尼、尼可萊塔·布拉斯基<br>
+                        <b>片長</b> 116分鐘<br>
+                        <b>語言</b> 義大利語<br>
+                        1997年電影，由導演羅貝托·貝尼尼自編自演，榮獲奧斯卡最佳男主角、歐洲電影獎最佳影片及多個國際大奬。
+                    </span>
+                </div>
+                <div class="cha">
+                    <div id="img_dad" class="img_cha"></div>
+                    <div id="img_mom" class="img_cha"></div>
+                    <div id="img_kid" class="img_cha"></div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="section" id="section_4">
+            <div class="container">
+                <div class="award">
+                    <div id="img_oscar" class="img_award">
+                        <div class="infor_award">
+                            <span>第71屆奧斯卡最佳外語片<br>最佳男主角
+                                羅貝托·貝尼尼</span>
+                        </div>
+                    </div>
+                    <div id="img_cannes" class="img_award">
+                        <div class="infor_award">
+                            <span>1998年坎城影展評審團大獎</span>
+                        </div>
+                    </div>
+                    <div id="img_european" class="img_award">
+                        <div class="infor_award">
+                            <span>1998年歐洲電影獎最佳影片<br>
+                                最佳男主角</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="back_word">
+                    <span>la vita è bella</span>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div id="footer">
+        <div class="container">
+            <div id="center">
+                <a href="#section_1">
+                    <div class="block"><span>劇情簡介</span></div>
+                </a>
+                <a href="#section_2">
+                    <div class="block"><span>電影劇照</span></div>
+                </a>
+                <a href="#section_3">
+                    <div class="block"><span>電影資訊</span></div>
+                </a>
+                <a href="#section_4">
+                    <div class="block"><span>獲得獎項</span></div>
+                </a>
+            </div>
+            <div id="copyright">
+                Copyright
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</body>
+
+</html>

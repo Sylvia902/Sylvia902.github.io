@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <style>
+        body {
+            height: 2000px;
+            margin: 0;
+            background-color: #E6ECF0;
+        }
+
+        .container {
+            max-width: 1170px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .fa-twitter {
+            color: #1DA1F2;
+            font-size: 18px;
+            padding-right: 5px;
+        }
+
+        .nav{
+            position: fixed;
+            top: 0;
+            display: block;
+            height: 45px;
+            width: 100%;
+            background-color: white;
+            line-height: 45px;
+            box-shadow: 0 1px 3px 0 rgba(0,0,0,0.25);
+            z-index: 99;
+            letter-spacing: 20px   
+        }
+
+        .nav .navL a:hover {
+            color: #1DA1F2;
+        }
+
+        #nav_2 {
+            height: 60px;
+            position: relative;
+            position: sticky;
+            top: 105px;
+            z-index: 98;
+            box-sizing: border-box;
+        }
+
+        .navbar-link {
+            text-decoration: none;
+            color: #66757f;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        
+        .navbar-link .light {
+            font-weight: 500
+        }
+
+        .navL {
+            float: left;
+        }
+        
+        .navM {
+            position: absolute;
+            left: 300px;
+        }
+
+        .navR {
+            float: right;
+            line-height: 45px;
+        }
+
+        #nav_2 .navR {
+            line-height: 60px;
+        }
+        
+        #backview {
+            background-image: url(https://pbs.twimg.com/profile_banners/12/1483046077/1500x500);
+            height: 550px;
+            background-size: cover;
+            background-position: 0 10%;
+            position: sticky;
+            top: -390px;
+            
+        }
+        
+        #selfie {
+            width: 200px;
+            height: 200px;
+            background-image: url(http://www.eagledesign.com.tw/images/ds-c-01.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 50%;
+            border: 5px solid white;
+            float: left;
+            position: absolute;
+            top: -120px;
+        }
+
+        .button {
+            width: 100px;
+            height: 36px;
+            background-color: white;
+            border: 1px solid #A62222;
+            color: #A62222;
+            font-weight: 700;
+            border-radius: 20px;
+            font-size: 14px;
+            
+        }
+        
+        .button:hover {
+            background-color:#F4E5E5;
+        }
+
+        .column {
+            float: left;
+            line-height: 18px;
+            text-align: center;
+            padding: 10px 15px;
+        }
+
+        .column:hover {
+            border-bottom: 2px solid #A62222;
+        }
+
+        .defaut {
+            border-bottom: 2px solid #A62222;
+        }
+
+        .defaut span {
+            color: #A62222;
+        }
+
+        .column span {
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .column span:hover {
+            color: #A62222;
+        }     
+
+        .search {
+            outline: none;
+            border-radius: 20px;
+            border: 1px solid #e6ecf0;
+            background-color: #F5F8FA;
+            padding: 6px 12px;
+        }
+
+        .search:focus {
+            border: 2px solid #990000;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="container" id="container">
+            <div class="navL">
+                <a class="navbar-link" href=""><i class="fab fa-twitter"></i>首頁</a>
+                <a class="navbar-link" href="">關於</a>
+            </div>
+            <div class="navR">
+                <input class="search" type="text" placeholder="搜尋 Twitter">
+                <a class="navbar-link" href="">
+                    <span class="light">已經擁有帳戶？</span><span>登入</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div id="backview"></div>
+    <nav class="nav" id="nav_2">
+        <div class="container" id="container_2">
+            <div class="navL">
+                <div id="selfie"></div>
+            </div>
+            <div class="navM">
+                <div class="column defaut">         
+                    <a class="navbar-link" href="">推文<br><span>2.48萬</span></a>     
+                </div>
+                <div class="column">         
+                    <a class="navbar-link" href="">正在跟隨<br><span>3735</span></a>     
+                </div>
+                <div class="column">         
+                        <a class="navbar-link" href="">跟隨者<br><span>412萬</span></a>     
+                </div>
+                <div class="column">         
+                        <a class="navbar-link" href="">喜歡的內容<br><span>2.23萬</span></a>     
+                </div>
+                <div class="column">         
+                        <a class="navbar-link" href="">列表<br><span>5</span></a>     
+                </div>
+            </div>
+
+            <div class="navR">
+                <button class="button">跟隨</button>
+            </div>
+        </div>
+    </nav>
+</body>
+
+</html>
