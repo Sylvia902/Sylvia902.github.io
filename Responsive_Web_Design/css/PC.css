@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;    
+    width: 1920px; 
+    height: 100vh;
+    position: relative; 
+}
+
+.clearfix {
+    clear: both;
+}
+
+/* 以下為導覽列區塊 */
+nav {
+    height: 100vh;
+    min-width: 300px;
+    background-color: #ccc;
+    padding: 50px 100px;
+    float: left;
+    position: fixed;
+}
+
+nav .logo {
+    width: 100px;
+    height: 100px;
+    background-color: aliceblue;
+    margin-bottom: 50px;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+    text-decoration: none;
+    color: darkslategray;
+}
+
+/* 以下為內容區塊 */
+.section {
+    height: 100vh;
+    width: calc(100% - 300px);
+    margin-left: auto;
+    position: relative;
+}
+
+.section .content {
+    width: 100%;
+    max-width: 930px;
+    position: absolute;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section .content .block {
+    width: 33%;
+    height: 500px;
+    background-color: lightblue;
+    float: left;
+    margin: 0 auto;
+    
+}
