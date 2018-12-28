@@ -71,9 +71,9 @@ nav .menu:hover div {
     transition: 0.5s;
 }
 
-/* nav .menu:visited span {
+nav .menu:visited span {
     color: #ccc;
-} */
+}
 
 nav .menu:active span {
     /* background-color: aliceblue; */
