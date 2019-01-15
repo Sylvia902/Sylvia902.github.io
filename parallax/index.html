@@ -101,7 +101,7 @@
         .nav_2 a {
             float: left;
             font-size: 20px;
-            color:  rgb(230, 192, 142);
+            color: rgb(230, 192, 142);
             text-decoration: none;
             font-family: '微軟正黑體';
             line-height: 80px;
@@ -116,6 +116,7 @@
             transition: 0.5s;
         }
 
+        /* section1 */
         #section_1 {
             position: relative;
         }
@@ -168,22 +169,7 @@
             top: 12%;
         }
 
-        #section_1 .backbtn {
-            font-family: '微軟正黑體';
-            font-size: 20px;
-            font-weight: bold;
-            color: #263228;
-            background-color: bisque;
-            line-height: 60px;
-            text-align: center;
-            height: 60px;
-            width: 60px;
-            border-radius: 50%;
-            right: 8%;
-            bottom: 10%;
-            position: fixed;
-            z-index: 97;
-        }
+
 
         .img_movie {
             float: left;
@@ -196,7 +182,7 @@
             transition: 1s;
         }
 
-
+        /* section2 */
         #section_2 .still_infor {
             height: 100%;
             width: 100%;
@@ -236,6 +222,7 @@
             background-color: aquamarine;
         }
 
+        /* section3 */
         #section_3 .bgimg {
             background-image: url(img/movie09.jpg);
             background-position: center;
@@ -304,33 +291,7 @@
             letter-spacing: 3px;
         }
 
-        /* #section_3 .cha {
-            padding-left: 35%;
-            padding-bottom: 25%;
-        }
-
-        #section_3 .img_cha {
-            height: 300px;
-            width: 200px;
-            float: left;
-            background-size: cover;
-            background-position: center;
-            margin-right: 5%;
-        }
-
-        #section_3 #img_dad {
-            background-image: url(img/img_cha1.gif);
-        }
-
-        #section_3 #img_mom {
-            background-image: url(img/img_cha2.jpg);
-        }
-
-        #section_3 #img_kid {
-            background-image: url(img/img_cha3.jpg);
-        } */
-        
-
+        /* section4 */
         #section_4 .award {
             padding: 10% 0;
         }
@@ -434,6 +395,34 @@
             left: 50%;
             transform: translate(-50%);
         }
+
+        /* top按鈕 */
+        .backbtn {
+            font-family: '微軟正黑體';
+            font-size: 20px;
+            font-weight: bold;
+            color: #263228;
+            background-color: bisque;
+            line-height: 60px;
+            text-align: center;
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            right: 8%;
+            bottom: 10%;
+            position: fixed;
+            z-index: 97;
+        }
+
+        /* top按鈕隱藏 */
+        #back_to_top.hidden {
+            display: none;
+        }
+
+        /* top按鈕出現 */
+        #back_to_top.show {
+            display: block;
+        }
     </style>
 </head>
 
@@ -497,9 +486,7 @@
                 </div>
             </div>
 
-            <a href="#top">
-                <div class="backbtn"><span>Top</span></div>
-            </a>
+
             <div class="clearfix"></div>
         </div>
         <div class="section" id="section_2">
@@ -598,6 +585,28 @@
         </div>
         <div class="clearfix"></div>
     </div>
+    <a id="back_to_top" href="#top">
+        <div class="backbtn"><span>Top</span></div>
+    </a>
+
+    <script>
+    let botton = document.querySelector("#back_to_top");
+    
+    window.onscroll = function () {
+        let scrollTop = document.documentElement.scrollTop;
+        console.log(scrollTop);
+        
+        if (scrollTop > 1000) {
+            botton.classList.add("show")
+        } else if(scrollTop <= 350) {
+            botton.classList.remove("show")
+            botton.classList.add("hidden")
+            console.log('hidden');            
+        }
+        
+    }    
+
+    </script>
 </body>
 
 </html>
