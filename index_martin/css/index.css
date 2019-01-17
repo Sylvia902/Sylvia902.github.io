@@ -4,7 +4,10 @@ body {
     height: 100%;
 }
 
-
+    .section {
+        position: relative;
+        height: 1080px;
+    }
 
     .bgImg {
         width: 100%;
@@ -25,22 +28,28 @@ body {
         background-position: center;
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
     }
-/* section01 */
-    .section01 {
-        height: 100vh;
-        position: relative;
+
+    h1 {
+        font-family: "微軟正黑體";
+        font-size: 32px;        
     }
 
+    p {
+        font-family: "微軟正黑體";
+        font-size: 18px;
+        line-height: 36px;
+    }
+/* section01 aboutBaiRay */
+    
     .section01 .bgImg {
         height: 540px;
         background-image: url(/img/section01bg_1920x1080.jpg);
-        top: 0px;
         
     }
 
     .section01 .secPic {
-        width: 30%;
-        height: 60%;
+        width: 655px;
+        height: 678px;
         background-image: url(/img/300ppi/sec01_pic@300x.png);
         top: 20%;
         left: 10%;    
@@ -52,26 +61,86 @@ body {
         background-color: #ddcfbc;        
         mix-blend-mode: screen;
         padding-left: 2%;
-        float: right;
-
+        margin-top: 20%;
     }
-
 
     .section01 .secTitle p {
         font-size: 48px;
         font-weight: bold;
-        font-family: "微軟正黑體";
-        line-height: 45px;
-           
+        line-height: 30px;       
         
     }
+
     .section01 .secTitle p:nth-child(odd){
         font-size: 32px;
         margin-left: -4%;
     }
 
+    .section01 .secContent {
+        margin-top: 19%;
+        width: 475px;
+        color: black;        
+    }
 
+/* section02 brands */
 
+/* section03 aboutMartin */
+    .section03 .bgImg {
+        height: 852px;
+        background-image: url(/img/section03bg_1920x1080.jpg);
+        position: absolute;
+        top: 114px;
+    }
 
+    .section03 .secPic {
+        width: 814px;
+        height: 458px;
+        background-image: url(/img/300ppi/sec03_pic@300x.png);
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;  
+    }
+
+    .section03 .secTitle {
+        width: 475px;
+        height: 200px ;
+        background-color: #ddcfbc;        
+        mix-blend-mode: screen;
+        padding-left: 2%;
+        margin: -9% 0 0 10%;
+    }
+
+    .section03 .secTitle p {
+        font-size: 48px;
+        font-weight: bold;
+        line-height: 30px;
+    }
+
+    .section03 .secTitle p:nth-child(odd){
+        font-size: 32px;
+        margin-left: -4%;
+    }
+
+    .section03 .secContent h1{
+        color: #e5e5e5;        
+    }
+
+    .section03 .secContent {
+        margin-top: 4%;
+    }
+
+    .section03 .historyContent {
+        height: 650px;
+    }
+
+    .section03 .historyContent p{
+        width: 300px;
+        color: #e5e5e5;
+        margin-right: 65px;
+    }
+
+    /* section04 skillMartin */
+    
+    
 
     
