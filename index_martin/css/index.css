@@ -1,0 +1,77 @@
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+
+
+    .bgImg {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .mask {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.75);
+    }
+
+    .secPic {
+        position: absolute;
+        background-size: cover;
+        background-position: center;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
+    }
+/* section01 */
+    .section01 {
+        height: 100vh;
+        position: relative;
+    }
+
+    .section01 .bgImg {
+        height: 540px;
+        background-image: url(/img/section01bg_1920x1080.jpg);
+        top: 0px;
+        
+    }
+
+    .section01 .secPic {
+        width: 30%;
+        height: 60%;
+        background-image: url(/img/300ppi/sec01_pic@300x.png);
+        top: 20%;
+        left: 10%;    
+    }
+
+    .section01 .secTitle {
+        width: 475px;
+        height: 200px ;
+        background-color: #ddcfbc;        
+        mix-blend-mode: screen;
+        padding-left: 2%;
+        float: right;
+
+    }
+
+
+    .section01 .secTitle p {
+        font-size: 48px;
+        font-weight: bold;
+        font-family: "微軟正黑體";
+        line-height: 45px;
+           
+        
+    }
+    .section01 .secTitle p:nth-child(odd){
+        font-size: 32px;
+        margin-left: -4%;
+    }
+
+
+
+
+
+    
