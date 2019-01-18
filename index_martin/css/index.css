@@ -43,14 +43,14 @@ body {
     
     .section01 .bgImg {
         height: 540px;
-        background-image: url("/img/section01bg_1920x1080.jpg");
+        background-image: url("img/section01bg_1920x1080.jpg");
         
     }
 
     .section01 .secPic {
         width: 655px;
         height: 678px;
-        background-image: url("/img/300ppi/sec01_pic@300x.png");
+        background-image: url("img/300ppi/sec01_pic@300x.png");
         top: 20%;
         left: 10%;    
     }
@@ -87,7 +87,7 @@ body {
 /* section03 aboutMartin */
     .section03 .bgImg {
         height: 852px;
-        background-image: url("/img/section03bg_1920x1080.jpg");
+        background-image: url("img/section03bg_1920x1080.jpg");
         position: absolute;
         top: 114px;
     }
@@ -95,7 +95,7 @@ body {
     .section03 .secPic {
         width: 814px;
         height: 458px;
-        background-image: url("/img/300ppi/sec03_pic@300x.png");
+        background-image: url("img/300ppi/sec03_pic@300x.png");
         top: 50%;
         transform: translateY(-50%);
         right: 0;  
