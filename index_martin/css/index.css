@@ -95,7 +95,7 @@ body {
     .section03 .secPic {
         width: 814px;
         height: 458px;
-        background-image: url("/img/a300ppi/sec03_pic@300x.png");
+        background-image: url("img/a300ppi/sec03_pic@300x.png");
         top: 50%;
         transform: translateY(-50%);
         right: 0;  
