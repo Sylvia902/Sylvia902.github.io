@@ -50,7 +50,7 @@ body {
     .section01 .secPic {
         width: 655px;
         height: 678px;
-        background-image: url(../300ppi/sec01_pic@300x.png);
+        background-image: url(/img/300ppi/sec01_pic@300x.png);
         top: 20%;
         left: 10%;    
     }
