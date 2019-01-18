@@ -50,7 +50,7 @@ body {
     .section01 .secPic {
         width: 655px;
         height: 678px;
-        background-image: url("/img/a300ppi/sec01_pic@300x.png");
+        background-image: url(/img/a300ppi/sec01_pic@300x.png);
         top: 20%;
         left: 10%;    
     }
@@ -87,7 +87,7 @@ body {
 /* section03 aboutMartin */
     .section03 .bgImg {
         height: 852px;
-        background-image: url(../img/section03bg_1920x1080.jpg);
+        background-image: url("../img/section03bg_1920x1080.jpg");
         position: absolute;
         top: 114px;
     }
