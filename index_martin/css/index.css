@@ -87,7 +87,7 @@ body {
 /* section03 aboutMartin */
     .section03 .bgImg {
         height: 852px;
-        background-image: url("img/section03bg_1920x1080.jpg");
+        background-image: url("../img/section03bg_1920x1080.jpg");
         position: absolute;
         top: 114px;
     }
