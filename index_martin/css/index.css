@@ -43,7 +43,7 @@ body {
     
     .section01 .bgImg {
         height: 540px;
-        background-image: url("img/section01bg_1920x1080.jpg");
+        background-image: url(../img/section01bg_1920x1080.jpg);
         
     }
 
