@@ -43,8 +43,7 @@ body {
     
     .section01 .bgImg {
         height: 540px;
-        background-image: url(../img/section01bg_1920x1080.jpg);
-        
+        background-image: url(../img/section01bg_1920x1080.jpg);        
     }
 
     .section01 .secPic {
@@ -83,6 +82,67 @@ body {
     }
 
 /* section02 brands */
+    .section02 .bgImg {
+        height: 959px;
+        background-image: url(../img/section02bg_1920x1080.jpg);
+        position: absolute;
+        top: 5%;
+    }
+
+    .section02 .secTitle {
+        width: 475px;
+        height: 200px ;
+        background-color: #ddcfbc;        
+        mix-blend-mode: screen;
+        position: absolute;
+        top: -5%;
+    }
+
+    .section02 .secTitle p {
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 40px;
+    }
+
+    .section02 .secTitle p:first-child {
+        margin: 20% auto 0 4%;
+    }
+
+    .brands {
+        width: 870px;
+        height: 100%;
+        margin: 0 5% 0 auto;
+    }
+
+    .brands .row {
+        margin-bottom: 5%;
+    }
+
+    .brands .col-4 {
+        width: 256px;
+        height: 275px;
+        background-color: rgba(255, 255, 255, 0.5);
+        display: flex;
+        align-items: center;
+        flex: 0 0 30%;
+        position: relative;
+    }
+
+    .brands .col-4 p {
+        position: absolute;
+        right: 0;
+        bottom: -6%;
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+    .brands img {
+        width: 100%;
+    }
+
+    .brands p {
+        text-align: center;
+    }
 
 /* section03 aboutMartin */
     .section03 .bgImg {
@@ -140,7 +200,35 @@ body {
     }
 
     /* section04 skillMartin */
-    
-    
+    .section04 .bgImg {
+        height: 674px;
+        background-image: url(../img/section04bg_1920x1080.jpg);
+        position: absolute;
+        bottom: 0px;
+    }
+
+    .section04 .secPic {
+        width: 793px;
+        height: 596px;
+        background-image: url(../img/300ppi/sec04_pic@300x.png);
+        top: 50%;
+        transform: translateY(-50%);
+        left: 10%; 
+    }
+
+    .section04 .secContentTitle {
+        width: 450px;        
+        margin-top: 26%;
+    }
+
+    .section04 .secContentTitle h1 {
+        font-size: 50px;
+    }
+
+    .section04 .secContent {
+        margin-top: 5%;
+        color: #e5e5e5;
+        width: 450px;
+    }
 
     
