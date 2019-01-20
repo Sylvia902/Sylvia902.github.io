@@ -237,7 +237,6 @@ body {
         background-image: url(../img/section05bg_1920x1080.jpg);
         position: absolute;
         bottom: 0;
-        /* margin-bottom: 0 auto; */
     }
 
     .section05 .secTitle {
@@ -259,3 +258,117 @@ body {
         padding-top: 5%;
         
     }
+
+    /* section06 news */
+    .section06 .bgImg {
+        height: 852px;
+        background-image: url(../img/section06bg_1920x1080.jpg);
+        position: absolute;
+        bottom: 0;
+    }
+
+    .section06 .mask {
+        background-color: rgba(255, 255, 255, 0.45);
+        padding-top: 5%;
+    }
+
+    .section06 .secTitle {
+        width: 475px;
+        height: 200px ;
+        background-color: #ddcfbc;        
+        mix-blend-mode: screen;
+        transform: translateY(15%);
+    }
+
+    .section06 .secTitle p {
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 40px;
+        transform: translateY(200%)
+    }
+
+    .section06 .btn {
+        border-top: 4px solid #333;
+        border-bottom: 4px solid #333;
+        color: black;
+    }
+
+    .section06 .btn:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .section06 .btn.activeNews {
+        background-color: rgba(255, 255, 255, 0.5);
+        color: black;
+    }
+
+    .section06 #myBtnContainerNews {
+        margin-bottom: 10%;
+    }
+
+    .section06 .news {
+        width: 30%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    /* section07 footer */
+    .section07 .secTitle {
+        width: 475px;
+        height: 200px ;
+        background-color: #ddcfbc;        
+        mix-blend-mode: screen;
+        transform: translateY(15%);
+    }
+
+    .section07 .secTitle p {
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 40px;
+        transform: translateY(200%)
+    }
+
+    .section07 .container {
+        height: 55%;
+        position: relative;
+    }    
+
+    .section07 .secContent {
+        margin-top: 5%;
+    }
+
+    .section07 .secContent .infor {
+        width: 15%;
+    }
+
+    .section07 .secContent div {
+        margin-right: 10%;
+    }
+    
+    .section07 .secContent img {
+        width: 30%;
+    }
+
+    .section07 .knowMore {
+        position: absolute;
+        right: 0;
+        border: 5px solid #31332a;
+        padding: 1%;
+        color: #31332a;
+        bottom: 15%;
+    }
+
+    .section07 .siteMap {
+        width: 100%;
+        height: 45%;
+        background-color: #31332a;
+    }
+
+    .section07 .siteMap .container {
+        padding: 5% 0;
+    }
+
+    .section07 .siteMap .container a,.siteMap p {
+        color: #e5e5e5;
+    }
+

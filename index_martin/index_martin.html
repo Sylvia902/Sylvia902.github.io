@@ -68,7 +68,7 @@
 
         /* swiperProduct and filterSelector */
         .swiper-container-P {
-            overflow: hidden;            
+            overflow: hidden;
         }
 
         .swiper-container-P .swiper-slide {
@@ -90,7 +90,8 @@
             color: #e5e5e5;
         }
 
-        .filterProduct {
+        .filterProduct,
+        .news {
             display: none;
         }
 
@@ -110,7 +111,7 @@
             font-family: "微軟正黑體";
             padding: 12px 16px;
             background-color: transparent;
-            outline: none;       
+            outline: none;
         }
 
         .btn:hover {
@@ -137,7 +138,6 @@
 <body>
 
     <!-- Swiper -->
-
     <div class="swiper-container">
         <div class="headTitle">
             <img src="img/svg/header_title.svg" alt="Martin_Guitar">
@@ -283,6 +283,7 @@
         </div>
         <div class="secPic"></div>
     </div>
+
     <!-- products -->
     <div class="section05 section">
         <div class="container">
@@ -293,7 +294,7 @@
         </div>
         <div class="bgImg">
             <div class="mask">
-                <!-- SwiperProducts-->
+                <!-- SwiperProducts and filter-->
                 <div class="container">
                     <div id="myBtnContainer" class="d-flex justify-content-around">
                         <button class="btn active" onclick="filterSelection('all')"> Show all</button>
@@ -332,9 +333,157 @@
             </div>
         </div>
     </div>
+
     <!-- news -->
-    <div class="section06"></div>
-    <div class="section07"></div>
+    <div class="section06 section">
+        <div class="container">
+            <div class="secTitle">
+                <p>最新消息</p>
+                <p>News</p>
+            </div>
+        </div>
+        <div class="bgImg">
+            <div class="mask">
+                <!-- filterNews -->
+                <div class="container">
+                    <div id="myBtnContainerNews" class="d-flex justify-content-around">
+                        <button class="btn btnNews activeNews" onclick="filterNews('latest')"> 近期公告</button>
+                        <button class="btn btnNews" onclick="filterNews('activity')"> 活動消息</button>
+                        <button class="btn btnNews" onclick="filterNews('infor')"> 樂器淺談</button>
+                        <button class="btn btnNews" onclick="filterNews('talk')"> 音樂和你</button>
+                    </div>
+                    <div class="news latest">
+                        <h1>百瑞緊急聲明稿</h1>
+                        <p>2010-06-09</p>
+                        <p>敬愛的消費者及同行，您好：<br>
+                            本公司近來接獲多筆店家及消費者的投訴，經查證之後發現，有不肖店家假藉「Martin代理商」的名義，在網路上以低於成本的價格販賣「全新品」，實際上是二手吉他的收購及轉賣。</p>
+                        <a href="">
+                            <h1>More</h1>
+                        </a>
+                    </div>
+                    <div class="news activity">
+                        <h1>第三屆台灣百人夏威夷吉他街頭嘉年華 - Ukulele Happy Time</h1>
+                        <p>2011-06-04</p>
+                        <p>我們是一群Ukulele的愛好者, 因為Ukulele讓來自不同領域的家庭和朋友們結合在一起. 我們一起學音樂, 一起表演, 也一起帶著Ukulele去旅行,
+                            我們去了花博也南下到義大世界去分享Ukulele, 2011年應Hawaii Ukulele Festival 主辦單位邀請至夏威夷表演. 希望透過音樂來介紹台灣給外國人</p>
+                        <a href="">
+                            <h1>More</h1>
+                        </a>
+                    </div>
+                    <div class="news infor">
+                        <h1>我的烏克麗麗會走音?!</h1>
+                        <p>2010-08-11</p>
+                        <p>相信很多朋友在Uke入手後會遇到一個問題，"彈一彈音準就跑掉了"，在這裡介紹大家一個小撇步。買到Uke以後先不要急著調音，先把弦拉一拉。怎麼拉呢？</p>
+                        <a href="">
+                            <h1>More</h1>
+                        </a>
+                    </div>
+                    <div class="news talk">
+                        <h1>馬丁名人堂—艾力克萊普頓(Eric Clapton)</h1>
+                        <p>2010-05-14</p>
+                        <p>艾力克萊普頓(Eric Clapton)<br>
+                            艾力克萊普頓是有史以來影響搖滾與民謠藍調吉他樂壇最深的吉他手，由他創作的Change the world, Tears in heaven, Wonderful Tonight,
+                            Tayla等，都成為家喻戶曉、膾炙人口的曲子。在他數十年的音樂生涯中，他不斷地創新、給予吉他藝術最新的定義。</p>
+                        <a href="">
+                            <h1>More</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="section07 section">
+        <div class="container">
+            <div class="secTitle">
+                <p>聯絡百瑞</p>
+                <p>Contact Us</p>
+            </div>
+            <div class="secContent d-flex justify-content-start">
+                <div class="infor">
+                    <h1>聯絡資訊</h1>
+                    <p>T:886-3-5620045</p>
+                    <p>F:886-3-5620046</p>
+                    <p>Mon-Fri</p>
+                    <p>11:00-20:00</p>
+                </div>
+                <div class="fb">
+                    <h1>Facebook</h1>
+                    <img src="img/300ppi/sec07_fb@300x.png" alt="">
+                </div>
+            </div>
+            <a href="">
+                <div class="knowMore"><h1>Know more</h1></div>
+            </a>            
+        </div>
+        <div class="siteMap">
+            <div class="container d-flex justify-content-between">
+                <div>
+                    <a href="">
+                        <h1>關於百瑞</h1>
+                    </a>
+                    <a href="">
+                        <p>企業使命</p>
+                    </a>
+                    <a href="">
+                        <p>代理品牌</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <h1>關於馬丁</h1>
+                    </a>
+                    <a href="">
+                        <p>馬丁歷史</p>
+                    </a>
+                    <a href="">
+                        <p>馬丁手作技術</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <h1>產品資訊</h1>
+                    </a>
+                    <a href="">
+                        <p>品牌</p>
+                    </a>
+                    <a href="">
+                        <p>樂器</p>
+                    </a>
+                    <a href="">
+                        <p>其他</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <h1>最新消息</h1>
+                    </a>
+                    <a href="">
+                        <p>近期公告</p>
+                    </a>
+                    <a href="">
+                        <p>活動訊息</p>
+                    </a>
+                    <a href="">
+                        <p>樂器淺談</p>
+                    </a>
+                    <a href="">
+                        <p>音樂和你</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <h1>聯絡百瑞</h1>
+                    </a>
+                    <p>T:886-3-5620045</p>
+                    <p>F:886-3-5620046 </p>
+                    <p>Mon-Fri</p>
+                    <p>11:00-20:00</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -373,7 +522,7 @@
         });
     </script>
 
-    <!-- filter -->
+    <!-- filterProducts -->
     <script>
         filterSelection("all")
         function filterSelection(c) {
@@ -415,6 +564,53 @@
                 var current = document.getElementsByClassName("active");
                 current[0].className = current[0].className.replace(" active", "");
                 this.className += " active";
+            });
+        }
+    </script>
+
+    <script>
+        // 預設顯示
+        filterNews("latest")
+
+        function filterNews(c) {
+            var x, i;
+            x = document.getElementsByClassName("news");
+            if (c == "") c = "";
+            for (i = 0; i < x.length; i++) {
+                RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
+            }
+        }
+
+        function AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+            }
+        }
+
+        function RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainerNews");
+        var btns = btnContainer.getElementsByClassName("btnNews");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("activeNews");
+                current[0].className = current[0].className.replace(" activeNews", "");
+                this.className += " activeNews";
             });
         }
     </script>
