@@ -65,6 +65,71 @@
             background-size: cover;
             background-position: center;
         }
+
+        /* swiperProduct and filterSelector */
+        .swiper-container-P {
+            overflow: hidden;            
+        }
+
+        .swiper-container-P .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            height: 100%;
+            height: 600px;
+        }
+
+        .swiper-container-P .swiper-slide img {
+            height: 70%;
+        }
+
+        .swiper-container-P .swiper-slide h1 {
+            color: #e5e5e5;
+        }
+
+        .swiper-container-P .swiper-slide p {
+            color: #e5e5e5;
+        }
+
+        .filterProduct {
+            display: none;
+        }
+
+        .show {
+            display: block;
+        }
+
+        #myBtnContainer {
+            margin-bottom: 3%;
+        }
+
+        .btn {
+            border-top: 4px solid #ccc;
+            border-bottom: 4px solid #ccc;
+            color: #ccc;
+            border-radius: 0;
+            font-family: "微軟正黑體";
+            padding: 12px 16px;
+            background-color: transparent;
+            outline: none;       
+        }
+
+        .btn:hover {
+            background-color: #ccc;
+            color: black;
+        }
+
+        .btn.active {
+            background-color: #666;
+            color: white;
+        }
+
+        .swiper-pagination-P {
+            text-align: center;
+        }
+
+        .swiper-pagination-bullet {
+            background: #ccc;
+        }
     </style>
 
 </head>
@@ -78,7 +143,6 @@
             <img src="img/svg/header_title.svg" alt="Martin_Guitar">
         </div>
         <div class="swiper-wrapper">
-
             <div id="banner01" class="swiper-slide"></div>
             <div id="banner02" class="swiper-slide"></div>
         </div>
@@ -220,9 +284,52 @@
         <div class="secPic"></div>
     </div>
     <!-- products -->
-    <div class="section05">
+    <div class="section05 section">
+        <div class="container">
+            <div class="secTitle">
+                <p>產品資訊</p>
+                <p>Products</p>
+            </div>
+        </div>
         <div class="bgImg">
-            <div class="mask"></div>
+            <div class="mask">
+                <!-- SwiperProducts-->
+                <div class="container">
+                    <div id="myBtnContainer" class="d-flex justify-content-around">
+                        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                        <button class="btn" onclick="filterSelection('btnBrands')"> 品牌</button>
+                        <button class="btn" onclick="filterSelection('btnMusic')"> 樂器</button>
+                        <button class="btn" onclick="filterSelection('btnOther')"> 其他</button>
+                    </div>
+                    <div class="swiper-container-P">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide filterProduct btnMusic btnBrands">
+                                <img src="img/martin/D-18.png" alt="">
+                                <h1>Martin</h1>
+                                <h1>單板民謠吉他</h1>
+                                <p>D-18</p>
+                            </div>
+                            <div class="swiper-slide filterProduct btnMusic">
+                                <img src="img/martin/000-18.png" alt="">
+                            </div>
+                            <div class="swiper-slide filterProduct btnMusic">
+                                <img src="img/martin/D-28.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide filterProduct btnMusic btnBrands">
+                                <img src="img/mtd/MTD-KH4-TC.png" alt="">
+                            </div>
+                            <div class="swiper-slide">Slide 5</div>
+                            <div class="swiper-slide">Slide 6</div>
+                            <div class="swiper-slide">Slide 7</div>
+                            <div class="swiper-slide">Slide 8</div>
+                            <div class="swiper-slide">Slide 9</div>
+                            <div class="swiper-slide">Slide 10</div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination-P"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- news -->
@@ -249,7 +356,67 @@
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
-        })
+        });
+    </script>
+
+    <!-- Initialize Swiper Products -->
+    <script>
+        var swiper = new Swiper('.swiper-container-P', {
+            direction: 'horizontal',
+            slidesPerView: 3,
+            spaceBetween: 30,
+            mousewheel: true,
+            pagination: {
+                el: '.swiper-pagination-P',
+                clickable: true,
+            },
+        });
+    </script>
+
+    <!-- filter -->
+    <script>
+        filterSelection("all")
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("filterProduct");
+            if (c == "all") c = "";
+            for (i = 0; i < x.length; i++) {
+                RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
+            }
+        }
+
+        function AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+            }
+        }
+
+        function RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
     </script>
 </body>
 

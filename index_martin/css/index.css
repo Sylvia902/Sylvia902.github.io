@@ -231,4 +231,31 @@ body {
         width: 450px;
     }
 
-    
+    /* section05 products */
+    .section05 .bgImg {
+        height: 852px;
+        background-image: url(../img/section05bg_1920x1080.jpg);
+        position: absolute;
+        bottom: 0;
+        /* margin-bottom: 0 auto; */
+    }
+
+    .section05 .secTitle {
+        width: 475px;
+        height: 200px ;
+        background-color: #ddcfbc;        
+        mix-blend-mode: screen;
+        transform: translateY(15%);
+    }
+
+    .section05 .secTitle p {
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 40px;
+        transform: translateY(200%)
+    }
+
+    .section05 .mask {
+        padding-top: 5%;
+        
+    }
