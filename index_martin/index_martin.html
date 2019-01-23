@@ -341,7 +341,7 @@
                                 <p>D-28</p>
                             </div>
                             <div class="swiper-slide filterProduct btnMusic martin">
-                                <img src="img/martin/OM-21.jpg" alt="">
+                                <img src="img/martin/OM-21.png" alt="">
                                 <a onclick="filterSelection('martin')" href="##">
                                     <h1>Martin</h1>
                                 </a>
@@ -641,6 +641,7 @@
             pagination: {
                 el: '.swiper-pagination-P',
                 clickable: true,
+                // dynamicBullets: true,
             },
         });
     </script>
@@ -648,8 +649,10 @@
     <!-- <script>
         let bullet = document.querySelector('.swiper-pagination-bullet');
         let products = document.querySelector('.swiper-slide');
-
+        
         function filterSelection() {
+            console.log("test");
+            
             if (products.getAttribute("show")) {
                 bullet.style.display = "block";
             } else {
