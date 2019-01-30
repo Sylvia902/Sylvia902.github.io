@@ -427,6 +427,30 @@ body {
 
     /* lg */
     @media only screen and (max-width: 992px) {
+        .section01 .secPic {
+            width: 50%;
+            height: 31%;
+            top: 4%;
+        }
+
+        .section01 .content01 {
+            margin: 29% auto 0;
+            z-index: 99;
+        }
+
+        .section01 .secContent {
+            margin: 40% -25% 0;
+            width: 150%;
+            max-width: 150%;
+        }
+
+        .section02 .secTitle {
+            width: 40%;
+        }
+
+        .brands {
+            padding-top: 20%;
+        }
 
     }
 
