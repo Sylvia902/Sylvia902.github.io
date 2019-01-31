@@ -640,8 +640,29 @@
             pagination: {
                 el: '.swiper-pagination-P',
                 clickable: true,
-                // dynamicBullets: true,
+                dynamicBullets: true,
             },
+        });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $(window).ready(function() {
+                var width=$(window).width();
+                // $("span").text(width);
+
+                if (width <= 768) {
+                    console.log("test");                    
+                    // $(swiper).slidesPerView.val(2);
+                    var swiper = new Swiper('.swiper-container-P', {
+                        slidesPerView: 2,
+                    });
+                } else {
+                    var swiper = new Swiper('.swiper-container-P', {
+                        slidesPerView: 3,
+                    });
+                }
+            });
         });
     </script>
 

@@ -452,11 +452,87 @@ body {
             padding-top: 20%;
         }
 
+        .section03 .secPic {
+            display: none;
+        }
+
+        .section03 .secContent h1 {
+            margin-left: 8%;
+        }
+
+        .section03 .historyContent {
+            width: 100%;
+        }
+
+        .section03 .historyContent p {
+            margin: 0 auto 1rem;
+        }
+
+        .section04 .secContentTitle {
+            margin-top: 32%;
+        }
+
+        .section04 .secPic {
+            width: 43%;
+            height: 43%;
+        }
+
+        .section07 .secContent .infor {
+            width: 30%;
+        }
+
+        .section07 .knowMore {            
+            right: 3%;
+            bottom: 19%;
+        }
+
+        .section07 .siteMap .container {
+            padding: 5% 2%;
+        }        
+
     }
 
     /* md */
     @media only screen and (max-width: 768px) {
+        .brands {
+            padding: 22% 5% 0;
+        }
 
+        .brands .row {
+            margin-bottom: 6%;
+        }
+
+        .section04 .secPic {
+            width: 70%;
+            height: 35%;
+            top: 63%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .section04 .secContentTitle {
+            margin: 32% auto 0;
+        }
+
+        .section04 .secContent {
+            margin: 1rem auto 0;
+        }
+
+        .section05 .bgImg {
+            height: 50rem;
+        }
+
+        .section06 .bgImg {
+            height: 50rem;
+        }
+
+        .section07 .secContent .infor {
+            width: 50%;
+        }
+
+        .section07 .secContent .fb {
+            display: none;
+        }
     }
 
     /* sm */
