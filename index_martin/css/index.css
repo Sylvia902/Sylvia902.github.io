@@ -1,7 +1,7 @@
 html,
 body {
     position: relative;
-    height: 100%;
+    /* height: 100%; */
 }
 
     .section {
@@ -201,7 +201,7 @@ body {
     }
 
     .section03 .secContent {
-        margin-top: 1%;
+        /* margin-top: 1%; */
     }
 
     .section03 .historyContent {
@@ -393,35 +393,81 @@ body {
     /* RWD */
 
     /* xl */
-    @media only screen and (max-width: 1200px) {
+    @media only screen and (max-width: 1440px) {
         .section {
             height: 100vh;
         }
 
         .section01 .secPic {
-            width: 45%;
-            height: 54%;
+            width: 40%;
+            height: 63%;
             background-image: url(../img/300ppi/sec01_pic@300x.png);
-            top: 20%;
+            top: 25%;
             left: 5%;    
+        }
+
+        .section02 .bgImg {
+            height: 95vh;
         }
 
         .brands {
             max-width: 750px;
             height: 96%;
             margin: 0 auto;
-            padding-top: 15%;
+            padding-top: 13%;
+        }
+
+        .brands .row {
+            margin-bottom: 4%;
+        }
+
+        .section03 .bgImg {
+            height: 90vh;
+            top: 10%;
         }
 
         .section03 .secPic {
             width: 39%;
-            height: 28%;
+            height: 35%;
+        }
+
+        .section03 .historyContent {
+            height: 650px;
+            width: 65%;
+        }
+
+        .section03 .historyContent p {
+            width: 46%;
+            margin-right: 4%;
         }
 
         .section04 .secPic {
             width: 50%;
-            height: 50%;
             left: 4%;
+        }
+
+        .section04 .bgImg {
+            height: 80%;
+        }
+
+        .section05 .bgImg {
+            height: 75vh;
+        }
+
+        .section05 .mask {
+            padding-top: 2%;
+        }
+
+        .swiper-container-P .swiper-slide {
+            height: 500px;
+        }
+
+        .section06 .bgImg {
+            height: 75%;
+        }
+
+        .section07 .secContent img {
+            width: 20%;
         }
     }
 
@@ -494,6 +540,10 @@ body {
 
     /* md */
     @media only screen and (max-width: 768px) {
+        .section01 .secPic {
+            filter: opacity(60%);
+        }
+
         .brands {
             padding: 22% 5% 0;
         }
@@ -536,7 +586,88 @@ body {
     }
 
     /* sm */
-    @media only screen and (max-width: 576px) {
+    @media only screen and (max-width: 414px) {
+        .secTitle {
+            display: none;
+        }
+
+        .section {
+            height: 100vh;
+        }
+
+        .section .bgImg {
+            height: 40%;
+            position: absolute;
+            top: 0;
+            bottom: auto;
+        }
+
+        .section01 .content01 {
+            margin: 60% auto 0;
+            padding: 30px 70px;
+        }
+
+        .section01 .secPic {
+            filter: opacity(30%);
+            top: 55%;
+        }
+
+        .section02 .bgImg {
+            z-index: -1;
+            height: 100vh;
+        }
+
+        .section02 .brands {
+            display: none;
+        }
+
+        .section03 .bgImg {
+            display: none;
+        }
+
+        .section03 .secContent {
+            padding-top: 4rem;
+        }
+
+        .section03 .secContent h1 {
+            color: #222;
+        }
+
+        .section03 .historyContent p {
+            width: 100%;
+            margin: 4px;
+            font-size: 1rem;
+            line-height: 1.8rem;
+            color: #222;
+        }
+
+        .section04 .secContent {
+            width: 100%;
+        }
+
+        .section04 .secContentTitle {
+            display: none;
+        }
+
+        .section04 .secContent h1 {
+            margin-left: 8%;
+        }
+
+        .section04 .secContent p {
+            width: 100%;
+            margin: 4px;
+            font-size: 1rem;
+            line-height: 1.8rem;
+        }
+
+        .section04 .secPic {
+            width: 100%;
+            top: 20rem;
+        }
+
+        .section05 .bgImg {
+            display: none;
+        }
 
     }
 

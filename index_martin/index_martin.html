@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Martin_Guitar</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/mobile.css">
 
     <style>
         /* banner */
@@ -157,7 +160,29 @@
     </div>
 
     <!-- about bairay -->
-    <div class="section01 section">
+    <nav class="mobile_nav">
+        <div class="menu">
+            <i class="fas fa-bars" onclick="openNav()" style="cursor:pointer"></i>
+        </div>
+        <div class="logo">
+            <img src="" alt="">
+        </div>
+    </nav>
+    <div class="mobile">
+        <div id="overlay_menu" class="overlay">
+            <i class="fas fa-times" onclick="closeNav()" style="cursor: pointer;color: #818181;"></i>
+            <div class="overlay-content">
+                <a href="#section_01" onclick="closeNav()">關於百瑞</a>
+                <a href="#section_03" onclick="closeNav()">關於馬丁</a>
+                <a href="#section_05" onclick="closeNav()">產品資訊</a>
+                <a href="#section_06" onclick="closeNav()">最新消息</a>
+                <a href="#section_07" onclick="closeNav()">聯絡百瑞</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="section_01" class="section01 section">
         <div class="bgImg">
             <div class="mask">
                 <div class="container d-flex align-items-end flex-column">
@@ -170,7 +195,8 @@
                         </div>
                         <div class="secContent">
                             <h1>百年精粹 百瑞之最</h1>
-                            <p>百瑞樂器自2009年成立以來，接續台灣樂盟部分的代理權，在國內銷售吉他、貝斯及其相關配件，並配合專業的維修服務以求供給同業和消費者最好的服務。我們用最大的熱誠，推廣樂器到台灣各個角落。</p>
+                            <p>百瑞樂器自2009年成立以來，接續台灣樂盟部分的代理權，在國內銷售吉他、貝斯及其相關配件，並配合專業的維修服務以求供給同業和消費者最好的服務。我們用最大的熱誠，推廣樂器到台灣各個角落。
+                            </p>
                         </div>
                     </div>
 
@@ -181,7 +207,25 @@
     </div>
 
     <!-- brands -->
-    <div class="section02 section">
+
+
+    <div id="section_02" class="section02 section">
+        <div class="mobile row">
+            <div class="mobile column">
+                <img src="/img/brands/01-Anuenue-logo-2.png" style="width:100%;">
+                <img src="/img/brands/03-CNB-logo.png" style="width:100%">
+                <img src="/img/brands/05-MAHALO-logo.png" style="width:100%">
+                <img src="/img/brands/07-RITTER-logo.png" style="width:100%">
+                <img src="/img/brands/09-V-logo.png" style="width:100%">
+            </div>
+            <div class="mobile column">
+                <img src="/img/brands/02-Martin guitar-logo.png" style="width:100%">
+                <img src="/img/brands/04-D-USA-logo.png" style="width:100%">
+                <img src="/img/brands/06-mtd-logo.png" style="width:100%">
+                <img src="/img/brands/08-SX-logo.png" style="width:100%">
+            </div>
+        </div>
+
         <div class="bgImg">
             <div class="mask">
                 <div class="container">
@@ -192,7 +236,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="brands">
                     <div class="row d-flex justify-content-between">
                         <div class="col-4">
@@ -234,8 +278,26 @@
         </div>
     </div>
 
+
     <!-- about martin -->
-    <div class="section03 section">
+    <div id="section_03" class="section03 section">
+        <div class="mobile">
+            <div class="secContent container d-flex align-items-start flex-column">
+                <h1>經典的傳承</h1>
+                <div class="historyContent d-flex flex-column flex-nowrap flex-sm-wrap">
+                    <p>Martin吉他（C. F. Martin &
+                        Company）是創立於1833年的美國木吉他製造商，創始人為克里斯丁-弗雷德里克-馬丁，所以馬丁的註冊商標是C.F.Martin。馬丁吉他至今百餘年歷史，早期的吉他製造所規模不大，每年僅僅生產182把吉他，馬丁歷經移民、遷廠，仍保有最初的製造技法與手作技術，目前由馬丁四世Chris
+                        Martin擔任執行長。</p>
+                    <p>克里斯丁-弗雷德里克-馬丁1796年在德國馬克諾伊吉爾興出生，父親是木匠。在當時，吉他還沒有被人們承認，其父因出售自製的手工吉他，得罪了當地的提琴製造商。於1807年，其父被勒令停業。
+                    </p>
+                    <p>而後師從奧地利維也納吉他師傅John
+                        Stauffer，1833年移民美國曼哈頓西區，設立了吉他製造所。可紐約當時急速的發展使馬丁一家為了尋求穩定的生活，1839年移居賓夕法尼亞州的拿撒勒。
+                        1856年馬丁的X型音梁結構也逐漸定型，1916年更生產專門為歌手設計大箱體的吉他，並以英國無畏級戰艦為名(Dreads或Dreadnought)，俗稱D桶、D型。
+                    </p>
+                    <p>馬丁四世Chris Martin至今也帶領馬丁走過許多大大小小的困難，延續傳統並維持馬丁百餘年的品質。</p>
+                </div>
+            </div>
+        </div>
         <div class="bgImg">
             <div class="mask">
                 <div class="container">
@@ -253,7 +315,8 @@
                             <p>Martin吉他（C. F. Martin &
                                 Company）是創立於1833年的美國木吉他製造商，創始人為克里斯丁-弗雷德里克-馬丁，所以馬丁的註冊商標是C.F.Martin。馬丁吉他至今百餘年歷史，早期的吉他製造所規模不大，每年僅僅生產182把吉他，馬丁歷經移民、遷廠，仍保有最初的製造技法與手作技術，目前由馬丁四世Chris
                                 Martin擔任執行長。</p>
-                            <p>克里斯丁-弗雷德里克-馬丁1796年在德國馬克諾伊吉爾興出生，父親是木匠。在當時，吉他還沒有被人們承認，其父因出售自製的手工吉他，得罪了當地的提琴製造商。於1807年，其父被勒令停業。</p>
+                            <p>克里斯丁-弗雷德里克-馬丁1796年在德國馬克諾伊吉爾興出生，父親是木匠。在當時，吉他還沒有被人們承認，其父因出售自製的手工吉他，得罪了當地的提琴製造商。於1807年，其父被勒令停業。
+                            </p>
                             <p>而後師從奧地利維也納吉他師傅John
                                 Stauffer，1833年移民美國曼哈頓西區，設立了吉他製造所。可紐約當時急速的發展使馬丁一家為了尋求穩定的生活，1839年移居賓夕法尼亞州的拿撒勒。
                                 1856年馬丁的X型音梁結構也逐漸定型，1916年更生產專門為歌手設計大箱體的吉他，並以英國無畏級戰艦為名(Dreads或Dreadnought)，俗稱D桶、D型。
@@ -268,7 +331,7 @@
     </div>
 
     <!-- skill of martin -->
-    <div class="section04 section">
+    <div id="section_04" class="section04 section">
         <div class="container d-flex align-items-end flex-column flex-wrap">
             <div class="secContentTitle">
                 <h1>獨特的音梁結構</h1>
@@ -293,7 +356,10 @@
     </div>
 
     <!-- products -->
-    <div class="section05 section">
+    <div id="section_05" class="section05 section">
+        <div class="mobile">
+            
+        </div>
         <div class="container">
             <div class="content">
                 <div class="secTitle">
@@ -301,7 +367,6 @@
                     <p>Products</p>
                 </div>
             </div>
-
         </div>
         <div class="bgImg">
             <div class="mask">
@@ -449,7 +514,7 @@
     </div>
 
     <!-- news -->
-    <div class="section06 section">
+    <div id="section_06" class="section06 section">
         <div class="container">
             <div class="content">
                 <div class="secTitle">
@@ -511,7 +576,7 @@
     </div>
 
     <!-- footer -->
-    <div class="section07 section">
+    <div id="section_07" class="section07 section">
         <div class="container">
             <div class="content">
                 <div class="secTitle">
@@ -611,11 +676,13 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
 
@@ -644,15 +711,25 @@
             },
         });
     </script>
+    <!-- overlay_menu -->
+    <script>
+        function openNav() {
+            document.getElementById("overlay_menu").style.height = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("overlay_menu").style.height = "0%";
+        }
+    </script>
 
     <script>
-        $(document).ready(function(){
-            $(window).ready(function() {
-                var width=$(window).width();
+        $(document).ready(function () {
+            $(window).ready(function () {
+                var width = $(window).width();
                 // $("span").text(width);
 
                 if (width <= 768) {
-                    console.log("test");                    
+                    console.log("test");
                     // $(swiper).slidesPerView.val(2);
                     var swiper = new Swiper('.swiper-container-P', {
                         slidesPerView: 2,
