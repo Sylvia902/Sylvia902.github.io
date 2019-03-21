@@ -100,3 +100,7 @@
     flex: 50%;
     padding: 0 4px;
 }
+
+.column.product img {
+    background-color: transparent;
+}
