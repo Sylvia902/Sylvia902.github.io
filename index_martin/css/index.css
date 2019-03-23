@@ -664,6 +664,15 @@ body {
             color: #222;
         }
 
+        .section04 {
+            height: 80vh;
+        }
+
+        .section04 .bgImg {
+            height: 50%;
+            background-position: right;
+        }
+
         .section04 .secContent {
             width: 100%;
         }
@@ -674,12 +683,17 @@ body {
 
         .section04 .secPic {
             width: 100%;
-            top: 20rem;
+            top: 19rem;
+            height: 42%;
         }
 
         .section05 .bgImg {
             display: none;
         }
+
+        /* .section05 h1 {
+            margin-bottom: 1rem;
+        } */
 
         .section06 {
             height: 60vh;
