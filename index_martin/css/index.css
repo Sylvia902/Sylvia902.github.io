@@ -642,6 +642,10 @@ body {
             display: none;
         }
 
+        .section03 {
+            height: 110vh;
+        }
+
         .section03 .bgImg {
             display: none;
         }
@@ -689,6 +693,7 @@ body {
             outline: none;
             border: none;
             padding: .3rem .5rem;
+            border-radius: 2;
         }
 
         .section06 .news {
